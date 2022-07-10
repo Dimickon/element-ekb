@@ -1,0 +1,33 @@
+.info__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+}
+
+.info__content {
+    color: #9B9B9B;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.info__title {
+    margin-bottom: 3rem;
+    color: #228BD6;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 9.4px;
+}
+
+.info__text {
+    margin-bottom: 1.5rem;
+
+    a {
+        color: inherit;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
