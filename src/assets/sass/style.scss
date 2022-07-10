@@ -14,12 +14,19 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: $white;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 @import "blocks/header";
 @import "blocks/container";
 @import "blocks/social";
 @import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/products";
 @import "blocks/footer";

@@ -66,8 +66,13 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .header__inner {
@@ -161,6 +166,108 @@ body {
 
 .nav__header li .sub-menu li {
     border-bottom: 0.5px solid #FFFFFF;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn--products {
+    padding: 1.2rem 2.4rem;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    background-color: #5BC0DE;
+    border-radius: 3px;
+}
+
+.btn--products-section {
+    font-size: 1.7rem;
+    background-color: #892a2a;
+    font-weight: 300;
+    line-height: 1em;
+    letter-spacing: 7px;
+    transition: background 0.2s linear;
+}
+
+.btn--products-section:hover {
+    background-color: #752424;
+}
+
+.products {
+    margin: 1rem 0 7rem;
+}
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.products__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 4rem;
+    color: #444444;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+.products__photo,
+.products__name,
+.products__text {
+    margin-bottom: 2rem;
+}
+
+.products__name {
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: -0.3px;
+}
+
+.products__text {
+    color: #9E9E9E;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.products__section {
+    margin: 3rem 0;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    background: url("../img/products/voda.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.products__content {
+    padding: 9rem 0;
+    background-color: rgba(140, 105, 103, 0.69);
+}
+
+.products__subtitle {
+    margin-bottom: 4rem;
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 4px;
+}
+
+.products__description {
+    margin: 0 auto 5rem;
+    max-width: 80%;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8em;
 }
 
 .footer {
