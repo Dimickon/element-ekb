@@ -1,3 +1,10 @@
 .header {
-    background-color: #333;
 }
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+

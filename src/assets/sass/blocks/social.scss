@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+
+}
+
+.social li {
+    margin: 0 .5rem;
+    background-color: $red;
+}
+
+.social li a {
+    display: block;
+    padding: 1rem;
+}
+
+.social li a img {
+    width: 2rem;
+    height: 2rem;
+}

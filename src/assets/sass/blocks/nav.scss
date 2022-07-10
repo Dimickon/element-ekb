@@ -1,0 +1,74 @@
+.nav {
+    background-color: $red;
+}
+
+/* Навигация в header
+==============================*/
+
+.nav__header {
+    display: flex;
+}
+
+.nav__header li {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.nav__header li a {
+    display: block;
+    padding: 1.5rem 2rem;
+
+    color: $white;
+    font-size: 1.45rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.nav__header .current-menu-item a {
+    opacity: .7;
+}
+
+.menu-item-has-children {
+    position: relative;
+
+    &:hover {
+        border-bottom: 1px solid $white;
+        .sub-menu {
+            display: block;
+        }
+    }
+}
+
+.nav__header li .sub-menu {
+    display: none;
+    min-width: 100%;
+    max-width: 130%;
+    background-color: darken($red, 8%);
+
+    position: absolute;
+    top: calc(100% + 1px);
+    z-index: 1;
+}
+
+.nav__header li .sub-menu li {
+    border-bottom: .5px solid $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

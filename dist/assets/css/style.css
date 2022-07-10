@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -66,11 +67,100 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ccc;
+    background-color: #FFFFFF;
 }
 
-.header {
-    background-color: #333;
+.header__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 116rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.social {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.social li {
+    margin: 0 0.5rem;
+    background-color: #D92F27;
+}
+
+.social li a {
+    display: block;
+    padding: 1rem;
+}
+
+.social li a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav {
+    background-color: #D92F27;
+}
+
+/* Навигация в header
+==============================*/
+.nav__header {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__header li {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.nav__header li a {
+    display: block;
+    padding: 1.5rem 2rem;
+    color: #FFFFFF;
+    font-size: 1.45rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__header li a:hover {
+    opacity: 0.7;
+}
+
+.nav__header .current-menu-item a {
+    opacity: 0.7;
+}
+
+.menu-item-has-children {
+    position: relative;
+}
+
+.menu-item-has-children:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.nav__header li .sub-menu {
+    display: none;
+    min-width: 100%;
+    max-width: 130%;
+    background-color: #b72720;
+    position: absolute;
+    top: calc(100% + 1px);
+    z-index: 1;
+}
+
+.nav__header li .sub-menu li {
+    border-bottom: 0.5px solid #FFFFFF;
 }
 
 .footer {

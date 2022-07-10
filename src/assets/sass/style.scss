@@ -15,8 +15,11 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ccc;
+    background-color: $white;
 }
 
 @import "blocks/header";
+@import "blocks/container";
+@import "blocks/social";
+@import "blocks/nav";
 @import "blocks/footer";
