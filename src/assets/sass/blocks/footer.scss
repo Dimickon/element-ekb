@@ -5,7 +5,7 @@
 
 .footer__inner {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-gap: 3rem;
 
     color: #707070;
@@ -25,4 +25,16 @@
 .footer__info {
     display: flex;
     flex-direction: column;
+
+    img,
+    p,
+    a:nth-child(n) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
 }

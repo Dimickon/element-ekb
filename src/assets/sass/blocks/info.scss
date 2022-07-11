@@ -1,13 +1,26 @@
+.info {
+    margin: 7rem 0;
+}
+
 .info__inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
+    position: relative;
+}
+
+.info__map {
 }
 
 .info__content {
+    padding: 4rem;
+
     color: #9B9B9B;
+    background-color: $grey;
     font-size: 1.7rem;
     font-weight: 400;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .info__title {
@@ -19,7 +32,7 @@
 }
 
 .info__text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 
     a {
         color: inherit;
