@@ -23,6 +23,13 @@ img {
     height: auto;
 }
 
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 @import "blocks/header";
 @import "blocks/container";
 @import "blocks/social";
@@ -30,4 +37,5 @@ img {
 @import "blocks/btn";
 @import "blocks/products";
 @import "blocks/info";
+@import "blocks/contacts";
 @import "blocks/footer";

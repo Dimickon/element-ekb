@@ -1,0 +1,56 @@
+.contacts {
+    margin: 3rem 0;
+}
+
+.contacts__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contacts__title {
+    margin-bottom: 2rem;
+
+    color: $blue;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contacts__text {
+    margin-bottom: 1.5rem;
+    color: #7A7A7A;
+    font-size: 1.7rem;
+    line-height: 28px;
+
+    a {
+        color: inherit;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    b {
+        font-weight: 700;
+    }
+
+    &--message {
+        color: #993300;
+    }
+}
+
+.contacts__map {
+    margin: 3rem 0;
+}
+
+.contacts__message {
+    margin: 3rem 0;
+    padding: 3rem;
+    width: 100%;
+
+    text-align: center;
+    background-color: $grey;
+}
