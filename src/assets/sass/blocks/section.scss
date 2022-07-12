@@ -9,3 +9,9 @@
     font-weight: 500;
     line-height: 1.2;
 }
+
+.section__aside {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    grid-gap: 3rem;
+}

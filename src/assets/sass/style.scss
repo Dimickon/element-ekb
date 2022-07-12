@@ -27,6 +27,10 @@ a {
     }
 }
 
+b {
+    font-weight: 700;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -50,4 +54,5 @@ img {
 @import "blocks/contacts";
 @import "blocks/services";
 @import "blocks/aside";
+@import "blocks/commodity";
 @import "blocks/footer";

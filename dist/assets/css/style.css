@@ -79,6 +79,10 @@ a:hover {
     text-decoration: underline;
 }
 
+b {
+    font-weight: 700;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -233,6 +237,12 @@ img {
     line-height: 1.2;
 }
 
+.section__aside {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    grid-gap: 3rem;
+}
+
 .products__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -378,10 +388,6 @@ img {
     font-weight: 700;
 }
 
-.contacts__text b {
-    font-weight: 700;
-}
-
 .contacts__text--message {
     color: #993300;
 }
@@ -396,12 +402,6 @@ img {
     width: 100%;
     text-align: center;
     background-color: #EEEEEE;
-}
-
-.services {
-    display: grid;
-    grid-template-columns: 8fr 3fr;
-    grid-gap: 3rem;
 }
 
 .services__info {
@@ -457,8 +457,58 @@ img {
     line-height: 28px;
 }
 
-.aside__text b {
+.commodity {
+    color: #7a7a7a;
+    font-size: 1.7rem;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.commodity__header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.commodity__content {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.commodity__content ol {
+    color: #d92f27;
+    list-style: decimal;
+}
+
+.commodity__main {
+    margin: 1.5rem 0;
+}
+
+.commodity__subtitle {
+    margin-bottom: 1.5rem;
+    color: #444444;
+    font-size: 2rem;
     font-weight: 700;
+}
+
+.commodity__text {
+    margin-bottom: 1.5rem;
+}
+
+.commodity__info {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.commodity__illustration {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+.commodity__description {
+    padding: 2rem;
+    background-color: #EEEEEE;
 }
 
 .footer {
