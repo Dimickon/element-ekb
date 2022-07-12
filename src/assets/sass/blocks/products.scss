@@ -1,7 +1,3 @@
-.products {
-    margin: 1rem 0 7rem;
-}
-
 .products__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,6 +12,10 @@
     color: $black;
     text-align: center;
     background-color: $grey;
+}
+
+.services .products__item {
+    padding: 2rem;
 }
 
 .products__photo,
@@ -35,6 +35,13 @@
     color: #9E9E9E;
     font-size: 1.7rem;
     font-weight: 300;
+}
+
+.products__price {
+    margin-bottom: 1.5rem;
+    color: #515151;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
 .products__section {

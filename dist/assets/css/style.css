@@ -70,6 +70,15 @@ body {
     background-color: #FFFFFF;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -212,8 +221,16 @@ img {
     background-color: #752424;
 }
 
-.products {
-    margin: 1rem 0 7rem;
+.section {
+    margin: 3rem 0;
+}
+
+.section__title {
+    margin-bottom: 1.5rem;
+    color: #515151;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .products__grid {
@@ -233,6 +250,10 @@ img {
     background-color: #EEEEEE;
 }
 
+.services .products__item {
+    padding: 2rem;
+}
+
 .products__photo,
 .products__name,
 .products__text {
@@ -250,6 +271,13 @@ img {
     color: #9E9E9E;
     font-size: 1.7rem;
     font-weight: 300;
+}
+
+.products__price {
+    margin-bottom: 1.5rem;
+    color: #515151;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
 .products__section {
@@ -318,13 +346,7 @@ img {
 }
 
 .info__text a {
-    color: inherit;
     font-weight: 700;
-    text-decoration: none;
-}
-
-.info__text a:hover {
-    text-decoration: underline;
 }
 
 .contacts {
@@ -353,13 +375,7 @@ img {
 }
 
 .contacts__text a {
-    color: inherit;
     font-weight: 700;
-    text-decoration: none;
-}
-
-.contacts__text a:hover {
-    text-decoration: underline;
 }
 
 .contacts__text b {
@@ -382,6 +398,69 @@ img {
     background-color: #EEEEEE;
 }
 
+.services {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    grid-gap: 3rem;
+}
+
+.services__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    color: #7a7a7a;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.services__illustration {
+    text-align: center;
+}
+
+.services__text {
+    margin-bottom: 1.5rem;
+}
+
+.aside {
+    color: #515151;
+}
+
+.aside__content {
+    margin-bottom: 3rem;
+}
+
+.aside__title {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.aside__title:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #d92f27;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.aside__text {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.aside__text b {
+    font-weight: 700;
+}
+
 .footer {
     margin-top: auto;
     padding: 7rem 0;
@@ -395,15 +474,6 @@ img {
     color: #707070;
     font-size: 1.7rem;
     font-weight: 400;
-}
-
-.footer__inner a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.footer__inner a:hover {
-    text-decoration: underline;
 }
 
 .footer__info {

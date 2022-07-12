@@ -18,6 +18,15 @@ body {
     background-color: $white;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 img {
     width: 100%;
     height: auto;
@@ -35,7 +44,10 @@ img {
 @import "blocks/social";
 @import "blocks/nav";
 @import "blocks/btn";
+@import "blocks/section";
 @import "blocks/products";
 @import "blocks/info";
 @import "blocks/contacts";
+@import "blocks/services";
+@import "blocks/aside";
 @import "blocks/footer";
