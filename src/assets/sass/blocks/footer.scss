@@ -12,6 +12,10 @@
     color: #707070;
     font-size: 1.7rem;
     font-weight: 400;
+
+    @include breakpoint($bp-medium) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer__info {
@@ -22,11 +26,29 @@
     p,
     a:nth-child(n) {
         margin-bottom: 1.5rem;
+        font-weight: 700;
     }
+}
+
+.footer__logo {
+    max-width: 300px;
+    max-height: 72px;
 }
 
 .footer__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+    @include breakpoint($bp-medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($bp-small) {
+        grid-template-columns: 1fr;
+    }
 }

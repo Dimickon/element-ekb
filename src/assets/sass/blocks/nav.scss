@@ -1,20 +1,20 @@
-.nav {
+.header__nav {
     background-color: $red;
 }
 
 /* Навигация в header
 ==============================*/
 
-.nav__header {
+.header__nav .nav {
     display: flex;
 }
 
-.nav__header li {
+.header__nav li {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
 
-.nav__header li a {
+.header__nav li a {
     display: block;
     padding: 1.5rem 2rem;
 
@@ -28,7 +28,7 @@
     }
 }
 
-.nav__header .current-menu-item a {
+.header__nav .current-menu-item a {
     opacity: .7;
 }
 
@@ -43,7 +43,7 @@
     }
 }
 
-.nav__header li .sub-menu {
+.header__nav li .sub-menu {
     display: none;
     min-width: 100%;
     max-width: 130%;
@@ -54,7 +54,7 @@
     z-index: 1;
 }
 
-.nav__header li .sub-menu li {
+.header__nav li .sub-menu li {
     border-bottom: .5px solid $white;
 }
 

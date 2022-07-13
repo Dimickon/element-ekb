@@ -18,6 +18,10 @@
     left: 0;
     top: 0;
     z-index: 1;
+
+    @include breakpoint($bp-small) {
+        position: static;
+    }
 }
 
 .info__title {

@@ -2,6 +2,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+
+    @include breakpoint($bp-medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4rem;
+    }
 }
 
 .products__item {
@@ -77,6 +86,10 @@
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.8em;
+
+    @include breakpoint($bp-small) {
+        max-width: 90%;
+    }
 }
 
 

@@ -1,7 +1,37 @@
+.header {
+    width: 100%;
+
+    background-color: $white;
+    transition: transform 200ms;
+    transform: translateY(0);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    &--fixed {
+        transform: translateY(var(--header-inner));
+    }
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5rem 0;
+
+    @include breakpoint($bp-small) {
+        flex-direction: column;
+        padding: 3rem 0;
+    }
 }
 
+.header__logo {
+    max-width: 250px;
+    max-height: 70px;
+}
 
+.header__media {
+    margin: 3rem 0 0;
+}

@@ -14,4 +14,8 @@
     display: grid;
     grid-template-columns: 8fr 3fr;
     grid-gap: 3rem;
+
+    @include breakpoint($bp-medium) {
+        grid-template-columns: 1fr;
+    }
 }
