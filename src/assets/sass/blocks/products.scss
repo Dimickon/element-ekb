@@ -13,6 +13,19 @@
     }
 }
 
+.section__aside {
+    .products__grid {
+        @include breakpoint($bp-big) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($bp-small) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 4rem;
+        }
+    }
+}
+
 .products__item {
     display: flex;
     flex-direction: column;
