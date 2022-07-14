@@ -1,9 +1,12 @@
 $(document).ready(function() {
-    let root =  document.documentElement;
-    let header = $('#header');
     let scrollTop = $(window).scrollTop();
+    let root =  document.documentElement;
+
+    let header = $('#header');
+    let burger = $('.header__burger');
 
     headerFixed();
+    toTop();
 
     $(window).on("scroll resize", function() {
         headerFixed();
@@ -14,6 +17,12 @@ $(document).ready(function() {
         $('body, html').animate({
             scrollTop: 0
         }, 800);
+    });
+
+    burger.click(function() {
+        let headerNav = $('#header__nav');
+        headerNav.toggleClass('header__nav--show');
+        burger.toggleClass('header__burger--active');
     });
 
     function headerFixed() {
@@ -44,8 +53,16 @@ $(document).ready(function() {
 
         let toTopBtn = $('#toTop');
 
-        if($(this).scrollTop() != 0) {
-            toTopBtn.fadeIn();
+        if($(this).scrollTop() != 250) {
+
+            if($(window).width() > 700) {
+                toTopBtn.fadeIn();
+            }
+
+            else {
+                toTopBtn.fadeOut();
+            }
+
         }
 
         else {

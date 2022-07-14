@@ -31,10 +31,12 @@
 
 .toTop {
     display: none;
-    background-color: transparent;
+    background-color: $red;
     border: 1px solid rgba($black, .3);
 
-    transition: background .2s linear;
+    opacity: .2;
+
+    transition: background .2s linear, opacity .2s linear;
 
     position: fixed;
     bottom: 5rem;
@@ -43,7 +45,8 @@
 
     &:hover {
         cursor: pointer;
-        background-color: $red;
+        background-color: darken($red, .85);
+        opacity: 1;
 
         img {
             opacity: .85;
