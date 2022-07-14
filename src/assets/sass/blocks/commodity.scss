@@ -9,6 +9,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
+
+    @include breakpoint($bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+    }
 }
 
 .commodity__content {
@@ -41,9 +46,15 @@
 }
 
 .commodity__illustration {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 75%;
     text-align: center;
+
+    .commodity__video {
+        max-width: 560px;
+    }
 }
 
 .commodity__description {

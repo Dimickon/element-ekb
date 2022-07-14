@@ -1,6 +1,7 @@
 $(document).ready(function() {
     let scrollTop = $(window).scrollTop();
     let root =  document.documentElement;
+    let body = $('#body');
 
     let header = $('#header');
     let burger = $('.header__burger');
@@ -20,6 +21,8 @@ $(document).ready(function() {
     });
 
     burger.click(function() {
+        body.toggleClass('show-nav');
+
         let headerNav = $('#header__nav');
         headerNav.toggleClass('header__nav--show');
         burger.toggleClass('header__burger--active');
@@ -53,7 +56,7 @@ $(document).ready(function() {
 
         let toTopBtn = $('#toTop');
 
-        if($(this).scrollTop() != 250) {
+        if($(this).scrollTop() >= 250) {
 
             if($(window).width() > 700) {
                 toTopBtn.fadeIn();

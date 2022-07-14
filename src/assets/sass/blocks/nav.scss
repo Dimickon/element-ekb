@@ -18,6 +18,7 @@
 
 .header__nav .nav {
     display: flex;
+    align-items: center;
 
     background-color: $red;
 
@@ -61,6 +62,13 @@
 
 .header__nav .current-menu-item a {
     opacity: .7;
+}
+
+.nav {
+    img {
+        width: 2rem;
+        height: auto;
+    }
 }
 
 .menu-item-has-children {
