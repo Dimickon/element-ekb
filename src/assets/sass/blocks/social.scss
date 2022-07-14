@@ -6,6 +6,33 @@
 .social li {
     margin: 0 .5rem;
     background-color: $red;
+
+    transition: background .2s linear;
+
+    &:nth-child(1) {
+        &:hover {
+            background-color: #0177FF;
+        }
+    }
+
+    &:nth-child(2) {
+        &:hover {
+            background-color: #FF8822;
+        }
+    }
+
+    &:nth-child(3) {
+        &:hover {
+            background-color: #CB2D7F;
+        }
+    }
+
+    &:nth-child(4) {
+        &:hover {
+            background-color: #1D9BF0;
+        }
+    }
+
 }
 
 .social li a {

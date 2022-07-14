@@ -45,7 +45,7 @@ img {
 }
 
 .main {
-    margin-top: 21.85rem;
+    margin-top: var(--main-top);
 }
 
 @import "blocks/header";

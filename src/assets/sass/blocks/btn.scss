@@ -28,3 +28,43 @@
         }
     }
 }
+
+.toTop {
+    display: none;
+    background-color: transparent;
+    border: 1px solid rgba($black, .3);
+
+    transition: background .2s linear;
+
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 1000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $red;
+
+        img {
+            opacity: .85;
+        }
+    }
+}
+
+.toTop__inner {
+    display: block;
+    padding: 2rem;
+    position: relative;
+
+    img {
+        display: block;
+        width: 2rem;
+        height: auto;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

@@ -55,6 +55,7 @@ table {
 
 :root {
     --header-inner: 0px;
+    --main-top: 0px;
 }
 
 *,
@@ -102,15 +103,15 @@ img {
 }
 
 .main {
-    margin-top: 21.85rem;
+    margin-top: var(--main-top);
 }
 
 .header {
     width: 100%;
     background-color: #FFFFFF;
-    transition: -webkit-transform 200ms;
-    transition: transform 200ms;
-    transition: transform 200ms, -webkit-transform 200ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     position: fixed;
@@ -165,6 +166,23 @@ img {
 .social li {
     margin: 0 0.5rem;
     background-color: #D92F27;
+    transition: background 0.2s linear;
+}
+
+.social li:nth-child(1):hover {
+    background-color: #0177FF;
+}
+
+.social li:nth-child(2):hover {
+    background-color: #FF8822;
+}
+
+.social li:nth-child(3):hover {
+    background-color: #CB2D7F;
+}
+
+.social li:nth-child(4):hover {
+    background-color: #1D9BF0;
 }
 
 .social li a {
@@ -269,6 +287,43 @@ img {
 
 .btn--products-section:hover {
     background-color: #752424;
+}
+
+.toTop {
+    display: none;
+    background-color: transparent;
+    border: 1px solid rgba(68, 68, 68, 0.3);
+    transition: background 0.2s linear;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 1000;
+}
+
+.toTop:hover {
+    cursor: pointer;
+    background-color: #D92F27;
+}
+
+.toTop:hover img {
+    opacity: 0.85;
+}
+
+.toTop__inner {
+    display: block;
+    padding: 2rem;
+    position: relative;
+}
+
+.toTop__inner img {
+    display: block;
+    width: 2rem;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .section {
@@ -659,6 +714,7 @@ img {
 @media (max-width: 1000px) {
     .footer__links {
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem 2rem;
     }
 }
 
