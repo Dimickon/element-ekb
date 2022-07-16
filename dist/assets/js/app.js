@@ -11,6 +11,7 @@ $(document).ready(function() {
 
     $(window).on("scroll resize", function() {
         headerFixed();
+        createSpanForNavLi();
         toTop();
     });
 
@@ -26,6 +27,19 @@ $(document).ready(function() {
         headerNav.toggleClass('header__nav--show');
         burger.toggleClass('header__burger--active');
     });
+
+    function createSpanForNavLi() {
+        if ($(window).width() < 700) {
+            let span = document.createElement('span');
+            $('.menu-item-has-children').appendChild(span);
+        }
+
+        else {
+
+        }
+    }
+
+
 
     function headerFixed() {
 
