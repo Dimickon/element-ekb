@@ -14,11 +14,10 @@ $(document).ready(function() {
         toTop();
     });
 
-    $('#toTop').click(function() {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 800);
-    });
+
+    /*
+    Навигация в header
+    ===================================*/
 
     burger.click(function() {
         body.toggleClass('show-nav');
@@ -51,6 +50,17 @@ $(document).ready(function() {
             root.style.setProperty('--main-top', headerH + 'px');
         }
     }
+
+
+    /*
+    Кнопка поднятия страницы к самому верху
+    ===================================*/
+
+    $('#toTop').click(function() {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 800);
+    });
 
     function toTop() {
 
