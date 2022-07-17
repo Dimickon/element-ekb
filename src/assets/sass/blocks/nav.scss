@@ -47,6 +47,10 @@
 .header__nav li {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
+
+    @include breakpoint($bp-small) {
+        border-bottom: 1px solid rgba($white, .5);
+    }
 }
 
 .header__nav li a {
