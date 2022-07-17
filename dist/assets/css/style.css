@@ -232,7 +232,7 @@ img {
 @media (max-width: 700px) {
     .header__nav .nav {
         display: block;
-        padding-bottom: 3rem;
+        padding-bottom: 10rem;
         width: 100%;
         max-height: calc(100vh + var(--mobile-nav));
         overflow: auto;
