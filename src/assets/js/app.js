@@ -56,13 +56,14 @@ $(document).ready(function() {
             header.addClass("header--fixed");
 
             root.style.setProperty('--header-inner', '-' + headerInnerH + 'px');
+            root.style.setProperty('--mobile-nav', headerNavH + 'px');
             root.style.setProperty('--main-top', headerNavH + 10 + 'px');
         }
 
         else {
             header.removeClass("header--fixed");
             root.style.setProperty('--main-top', headerH + 'px');
-            root.style.setProperty('--mobile-nav', '-' + headerInnerH + 'px');
+            root.style.setProperty('--mobile-nav', (headerInnerH + headerNavH) + 'px');
         }
     }
 
