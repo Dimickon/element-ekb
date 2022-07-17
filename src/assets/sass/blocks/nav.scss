@@ -26,8 +26,9 @@
 
     @include breakpoint($bp-small) {
         display: block;
+        padding-bottom: 3rem;
         width: 100%;
-        max-height: 100vh;
+        max-height: calc(100vh + var(--mobile-nav));
         overflow: auto;
 
         position: absolute;

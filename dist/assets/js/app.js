@@ -62,6 +62,7 @@ $(document).ready(function() {
         else {
             header.removeClass("header--fixed");
             root.style.setProperty('--main-top', headerH + 'px');
+            root.style.setProperty('--mobile-nav', '-' + headerInnerH + 'px');
         }
     }
 
